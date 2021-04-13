@@ -13,12 +13,16 @@ const App = () => {
     background: #fff;
     z-index: 12; /*place it above the "clock" and hour+min gage but under the centerDot*/
     border-radius: 6px 6px 0 0; /*smoothing out end of hour gage*/
-    left: 50%;
     bottom: 113px;
     transform: rotate(${props => props.rotation})
     translate3d(-50%, 0, 0);
     transform-origin: 0px bottom;
     }
+    display: flex;
+    justify-content: center; !*make it be on spot -> move it from left to center*!
+    position: absolute;
+    width: 230px;
+    height: 230px;
 `;
 
     const MinuteHand = styled.div`
@@ -27,6 +31,7 @@ const App = () => {
     position: absolute;
     width: 4px;
     height: 90px;
+    top: 5px;
     background: #fff;
     z-index: 11; /*place it above the "clock" and hour gage but under the centerDot*/
     border-radius: 6px 6px 0 0; /*smoothing out end of hour gage*/
@@ -52,7 +57,6 @@ const App = () => {
     transform-origin: 0px bottom;
     }
 `;
-
 
     const [day, setDay] = useState(new Date());
     useEffect(() => {

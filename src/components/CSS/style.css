@@ -33,6 +33,7 @@ body{
     background: #fff; /*white*/
     border-radius: 50%; /*make it round*/
     z-index: 10000; /* make it on top of everything*/
+    border: black solid 2px;
 }
 .clock .hour,
 .clock .min,
@@ -58,14 +59,15 @@ body{
     position: absolute;
     border-radius: 50%; /*Spin in circle*/
 }
-/*.hr:before{
+.hr:before{
     content: "";
+
     position: absolute;
     width: 8px;
     height: 80px;
     background: #cc293d;
-    z-index: 10; !*place it above the "clock" but under the centerDot*!
-    border-radius: 6px 6px 0 0; !*smoothing out end of hour gage*!
+    z-index: 10; /*place it above the "clock" but under the centerDot*/
+    border-radius: 6px 6px 0 0; /*smoothing out end of hour gage*/
 }
 .mn:before{
     content: "";
@@ -73,8 +75,8 @@ body{
     width: 4px;
     height: 90px;
     background: #fff;
-    z-index: 11; !*place it above the "clock" and hour gage but under the centerDot*!
-    border-radius: 6px 6px 0 0; !*smoothing out end of hour gage*!
+    z-index: 11; /*place it above the "clock" and hour gage but under the centerDot*/
+    border-radius: 6px 6px 0 0; /*smoothing out end of hour gage*/
 }
 .sc:before{
     content: "";
@@ -82,7 +84,7 @@ body{
     width: 2px;
     height: 150px;
     background: #fff;
-    z-index: 12; !*place it above the "clock" and hour+min gage but under the centerDot*!
-    border-radius: 6px 6px 0 0; !*smoothing out end of hour gage*!
-}*/
+    z-index: 12; /*place it above the "clock" and hour+min gage but under the centerDot*/
+    border-radius: 6px 6px 0 0; /*smoothing out end of hour gage*/
+}
 
